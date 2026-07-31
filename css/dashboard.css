@@ -1,0 +1,239 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+display:flex;
+background:#F7F1E5;
+color:#4B3621;
+}
+
+/* Sidebar */
+
+.sidebar{
+
+width:260px;
+height:100vh;
+background:#8B6B4A;
+position:fixed;
+padding-top:20px;
+
+}
+
+.sidebar h2{
+
+text-align:center;
+color:white;
+margin-bottom:30px;
+
+}
+
+.sidebar ul{
+
+list-style:none;
+
+}
+
+.sidebar ul li{
+
+margin:12px 0;
+
+}
+
+.sidebar ul li a{
+
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+transition:.3s;
+
+}
+
+.sidebar ul li a:hover{
+
+background:#A67C52;
+
+padding-left:35px;
+
+}
+
+/* Main */
+
+.main{
+
+margin-left:260px;
+padding:30px;
+width:100%;
+
+}
+
+/* Header */
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:35px;
+
+}
+
+header h1{
+
+font-size:32px;
+
+}
+
+.profile{
+
+font-size:45px;
+color:#8B6B4A;
+
+}
+
+/* Cards */
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 12px rgba(0,0,0,.1);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card i{
+
+font-size:45px;
+color:#A67C52;
+margin-bottom:15px;
+
+}
+
+.card h3{
+
+margin-bottom:10px;
+
+}
+
+/* Announcement */
+
+.announcement{
+
+margin-top:40px;
+
+}
+
+.notice{
+
+background:white;
+padding:20px;
+margin-top:15px;
+border-left:6px solid #A67C52;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+
+}
+
+/* Quick Buttons */
+
+.quick{
+
+margin-top:40px;
+
+}
+
+.quick-buttons{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+
+}
+
+.quick-buttons a{
+
+text-decoration:none;
+background:#A67C52;
+color:white;
+padding:15px 30px;
+border-radius:10px;
+transition:.3s;
+
+}
+
+.quick-buttons a:hover{
+
+background:#8B6B4A;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.sidebar{
+
+width:220px;
+
+}
+
+.main{
+
+margin-left:220px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+flex-direction:column;
+
+}
+
+.sidebar{
+
+position:relative;
+width:100%;
+height:auto;
+
+}
+
+.main{
+
+margin-left:0;
+
+}
+
+header{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+}
