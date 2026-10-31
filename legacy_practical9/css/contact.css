@@ -1,0 +1,156 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F7F1E5;
+    color: #4B3621;
+    line-height: 1.5;
+}
+
+.topbar {
+    background: #A67C52;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.container {
+    width: min(700px, 92%);
+    margin: 35px auto;
+}
+
+.form-card {
+    background: #FFFDF9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #4B36211A;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+.intro {
+    color: #80664D;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    color: #4B3621;
+    border: 1px solid #C9B49B;
+    border-radius: 7px;
+    background: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 3px solid #DCC3A5;
+    outline-offset: 1px;
+}
+
+.form-group [aria-invalid="true"] {
+    border-color: #B42318;
+}
+
+.field-error,
+.error-summary {
+    display: block;
+    color: #B42318;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.error-summary {
+    background: #FCE8E6;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+.success {
+    background: #E5F4E8;
+    color: #236B3B;
+    padding: 13px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #8B6B4A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6E5035;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #4B3621;
+    outline-offset: 3px;
+}
+
+.required-note {
+    margin-top: 12px;
+    color: #80664D;
+    font-size: 13px;
+}
+
+footer {
+    background: #A67C52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+@media (max-width: 550px) {
+    .form-card {
+        padding: 20px 16px;
+    }
+
+    .topbar {
+        padding: 15px 4%;
+    }
+}

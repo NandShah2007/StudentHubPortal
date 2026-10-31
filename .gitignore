@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+.env
+.env.*
+!.env.example
+vendor/
+
+# Contact form messages (personal data) - never upload
+data/contact_submissions.csv
+
+# Posters uploaded while testing (keep the folder, not the test files)
+events/uploads/*
+!events/uploads/.gitkeep
+!events/uploads/.htaccess

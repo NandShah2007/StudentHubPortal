@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <h2><i class="fa-solid fa-graduation-cap"></i> Student Hub</h2>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="courses.html"><i class="fas fa-book"></i> My Courses</a></li>
+            <li><a href="registration.html"><i class="fas fa-edit"></i> Registration</a></li>
+            <li><a href="assignments.html"><i class="fas fa-file-alt"></i> Assignments</a></li>
+            <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+            <li><a href="results.html"><i class="fas fa-chart-line"></i> Results</a></li>
+            <li><a href="timetable.html"><i class="fas fa-clock"></i> Timetable</a></li>
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            <li><a href="data.html"><i class="fas fa-database"></i> Data Explorer</a></li>
+            <li><a href="contact.php">PHP Contact Form</a></li>
+        </ul>
+
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="main">
+
+        <!-- Header (Flexbox) -->
+
+        <header>
+
+            <div>
+                <h1>Welcome, Student 👋</h1>
+                <p>Dashboard Overview | Semester 5</p>
+            </div>
+
+            <div class="profile">
+                <i class="fas fa-user-circle"></i>
+            </div>
+
+        </header>
+
+        <!-- Statistics Cards (CSS Grid + Bootstrap) -->
+
+        <section>
+
+            <h2 class="mb-3">Academic Overview</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <h3>Courses</h3>
+                    <p><strong>6 Enrolled</strong></p>
+                    <small>Current Semester Subjects</small>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Attendance</h3>
+                    <p><strong>92%</strong></p>
+
+                    <div class="progress mt-3">
+                        <div class="progress-bar" style="width:92%; background:#A67C52;">
+                            92%
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Assignments</h3>
+                    <p><strong>3 Pending</strong></p>
+                    <small>Due This Week</small>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>CGPA</h3>
+                    <p><strong>8.84</strong></p>
+                    <small>Overall Performance</small>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Announcements -->
+
+        <section class="announcement">
+
+            <h2>Latest Announcements</h2>
+
+            <div class="notice">
+                <h3>📢 Semester Examination</h3>
+                <p>Semester examinations begin on <strong>15 September 2026</strong>.</p>
+            </div>
+
+            <div class="notice">
+                <h3>📢 Assignment Submission</h3>
+                <p>Submit the Web Development assignment before <strong>Friday, 10 August</strong>.</p>
+            </div>
+
+            <div class="notice">
+                <h3>📢 AI & Machine Learning Workshop</h3>
+                <p>Free workshop on Saturday at 10:00 AM in Seminar Hall.</p>
+            </div>
+
+        </section>
+
+        <!-- Quick Actions (Flexbox) -->
+
+        <section class="quick">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-buttons">
+
+                <a href="courses.html">
+                    <i class="fas fa-book-open"></i><br>
+                    My Courses
+                </a>
+
+                <a href="attendance.html">
+                    <i class="fas fa-calendar-day"></i><br>
+                    Attendance
+                </a>
+
+                <a href="results.html">
+                    <i class="fas fa-chart-bar"></i><br>
+                    Results
+                </a>
+
+                <a href="assignments.html">
+                    <i class="fas fa-file-upload"></i><br>
+                    Assignments
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Bootstrap Responsive Table -->
+
+        <section class="announcement mt-5">
+
+            <h2>Today's Classes</h2>
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-hover">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th>Time</th>
+                            <th>Subject</th>
+                            <th>Faculty</th>
+                            <th>Room</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>9:00 AM</td>
+                            <td>Web Development</td>
+                            <td>Dr. Patel</td>
+                            <td>Lab 201</td>
+                        </tr>
+
+                        <tr>
+                            <td>10:30 AM</td>
+                            <td>Java Programming</td>
+                            <td>Dr. Mehta</td>
+                            <td>Room 305</td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00 PM</td>
+                            <td>Database Management</td>
+                            <td>Dr. Shah</td>
+                            <td>Room 108</td>
+                        </tr>
+
+                        <tr>
+                            <td>2:00 PM</td>
+                            <td>Cloud Computing</td>
+                            <td>Dr. Kumar</td>
+                            <td>Room 412</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dashboard JS -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

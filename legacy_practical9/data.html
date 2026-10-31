@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Explorer | Student Hub</title>
+    <link rel="stylesheet" href="css/data.css">
+    <script src="js/data.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html">Student Hub</a>
+        <a href="dashboard.html">Back to Dashboard</a>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <h1>Student Hub Data Explorer</h1>
+            <p>Explore events, student records and frequently asked questions.</p>
+        </section>
+
+        <section class="toolbar" aria-label="Data controls">
+            <div class="control">
+                <label for="datasetSelect">Choose data</label>
+                <select id="datasetSelect">
+                    <option value="events">College Events</option>
+                    <option value="students">Students</option>
+                    <option value="faqs">FAQs</option>
+                </select>
+            </div>
+
+            <div class="control">
+                <label for="searchInput">Search records</label>
+                <input id="searchInput" type="search"
+                       placeholder="Type to search..." autocomplete="off">
+            </div>
+
+            <div class="control">
+                <label for="filterSelect">Filter by</label>
+                <select id="filterSelect">
+                    <option value="">All categories</option>
+                </select>
+            </div>
+
+            <div class="control">
+                <label for="sortSelect">Sort records</label>
+                <select id="sortSelect">
+                    <option value="default">Default order</option>
+                    <option value="asc">Ascending (A–Z / oldest)</option>
+                    <option value="desc">Descending (Z–A / newest)</option>
+                </select>
+            </div>
+        </section>
+
+        <p id="statusMessage" class="status" role="status"
+           aria-live="polite">Loading records...</p>
+
+        <p id="resultsCount" class="results-count"></p>
+        <section id="recordsContainer" class="records-grid"
+                 aria-label="Data records"></section>
+
+        <nav class="pagination" aria-label="Results pages">
+            <button id="previousBtn" type="button">Previous</button>
+            <span id="pageInfo" aria-live="polite">Page 1</span>
+            <button id="nextBtn" type="button">Next</button>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Student Hub | Practical 6: JSON and Fetch API</p>
+    </footer>
+</body>
+</html>

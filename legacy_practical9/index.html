@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub Portal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+     NOTIFICATION BANNER
+===================================================== -->
+
+    <div id="notificationBanner" class="notification-banner">
+
+        <div>
+            <i class="fa-solid fa-bell"></i>
+
+            <strong>Important Announcement:</strong>
+            Semester examination registration is now open.
+        </div>
+
+        <button id="closeNotification" class="notification-close" aria-label="Close notification">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                Student Hub
+
+            </a>
+
+
+            <!-- Hamburger Button -->
+
+            <button class="navbar-toggler" type="button" id="menuToggle" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navbarMenu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <!-- Navigation -->
+
+            <div class="navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">
+                            Features
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="login.html">
+                            Login
+                        </a>
+
+                    </li>
+                    <li><a href="registration.php">Student Registration</a></li>
+                    <li>
+                        <a href="contact.php">Contact</a>
+                    </li>
+                    <li><a href="login.php">Login</a></li>
+
+                    <!-- Theme Toggle -->
+
+                    <li class="nav-item theme-item">
+
+                        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark theme">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+     HERO
+===================================================== -->
+
+    <section class="container hero-section">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span class="hero-label">
+                    STUDENT ACADEMIC PORTAL
+                </span>
+
+                <h1>
+                    Welcome to
+                    <span>Student Hub</span>
+                </h1>
+
+                <p>
+
+                    Manage your courses, attendance,
+                    assignments, results, timetable
+                    and announcements from one place.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="login.html" class="hero-btn">
+
+                        Get Started
+
+                    </a>
+
+
+                    <!-- Modal Trigger -->
+
+                    <button id="detailsBtn" class="outline-btn" type="button">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     ABOUT
+===================================================== -->
+
+    <section id="about" class="container section-padding">
+
+        <div class="section-heading">
+
+            <h2>About Student Hub</h2>
+
+            <p>
+
+                A centralized student portal for managing
+                academic activities efficiently.
+
+            </p>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h3>Academic Management</h3>
+
+                <p>
+                    Manage courses, assignments,
+                    attendance and results.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Save Time</h3>
+
+                <p>
+                    Access important academic information
+                    from one centralized portal.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-mobile-screen"></i>
+
+                <h3>Responsive</h3>
+
+                <p>
+                    Access the Student Hub on desktop,
+                    tablet and mobile devices.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     FEATURE SLIDER
+===================================================== -->
+
+    <section id="features" class="container section-padding">
+
+        <div class="section-heading">
+
+            <h2>Student Hub Features</h2>
+
+            <p>
+                Explore the major features of the portal.
+            </p>
+
+        </div>
+
+
+        <div class="slider">
+
+            <div class="slide active">
+
+                <i class="fa-solid fa-book"></i>
+
+                <h3>Course Management</h3>
+
+                <p>
+                    View enrolled subjects,
+                    faculty information and course progress.
+                </p>
+
+            </div>
+
+
+            <div class="slide">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>Attendance Tracking</h3>
+
+                <p>
+                    Monitor your attendance percentage
+                    for every subject.
+                </p>
+
+            </div>
+
+
+            <div class="slide">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h3>Assignments</h3>
+
+                <p>
+                    Check assignment deadlines
+                    and pending submissions.
+                </p>
+
+            </div>
+
+
+            <div class="slide">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <h3>Results</h3>
+
+                <p>
+                    View semester marks,
+                    grades and CGPA.
+                </p>
+
+            </div>
+
+
+            <!-- Slider Controls -->
+
+            <button id="previousSlide" class="slider-btn previous" aria-label="Previous slide">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <button id="nextSlide" class="slider-btn next" aria-label="Next slide">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+
+            <!-- Slider Dots -->
+
+            <div class="slider-dots">
+
+                <button class="dot active-dot" data-slide="0" aria-label="Slide 1">
+                </button>
+
+                <button class="dot" data-slide="1" aria-label="Slide 2">
+                </button>
+
+                <button class="dot" data-slide="2" aria-label="Slide 3">
+                </button>
+
+                <button class="dot" data-slide="3" aria-label="Slide 4">
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     FAQ
+===================================================== -->
+
+    <section id="faq" class="container section-padding">
+
+        <div class="section-heading">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+                Find answers to common Student Hub questions.
+            </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <!-- FAQ 1 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false">
+
+                    <span>
+                        How do I access my courses?
+                    </span>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Login to the Student Hub and select
+                        "My Courses" from the dashboard.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 2 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false">
+
+                    <span>
+                        How can I check my attendance?
+                    </span>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Open the Attendance section from
+                        the Student Hub dashboard.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false">
+
+                    <span>
+                        Where can I view my results?
+                    </span>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Select the Results option from
+                        the dashboard navigation menu.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 4 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question" aria-expanded="false">
+
+                    <span>
+                        How can I contact student support?
+                    </span>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Open the Contact page and submit
+                        the support form.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     QUICK ACCESS
+===================================================== -->
+
+    <section class="container section-padding">
+
+        <div class="section-heading">
+
+            <h2>Quick Access</h2>
+
+        </div>
+
+
+        <div class="quick-access">
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="courses.html">
+                <i class="fa-solid fa-book"></i>
+                Courses
+            </a>
+
+            <a href="attendance.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Attendance
+            </a>
+
+            <a href="assignments.html">
+                <i class="fa-solid fa-file"></i>
+                Assignments
+            </a>
+
+            <a href="results.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Results
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     MODAL
+===================================================== -->
+
+    <div id="detailsModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+        aria-hidden="true">
+
+        <div class="custom-modal">
+
+            <button id="closeModal" class="modal-close" aria-label="Close details">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <i class="fa-solid fa-graduation-cap modal-icon"></i>
+
+            <h2 id="modalTitle">
+                Student Hub Portal
+            </h2>
+
+            <p>
+
+                Student Hub provides students with
+                centralized access to courses, attendance,
+                assignments, results, timetable and
+                announcements.
+
+            </p>
+
+
+            <a href="login.html" class="hero-btn">
+
+                Login to Student Hub
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Student Hub Portal
+        </p>
+
+        <p>
+            Responsive Student Academic Portal
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Student Hub JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

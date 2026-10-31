@@ -1,0 +1,12 @@
+
+CREATE DATABASE IF NOT EXISTS student_hub_db;
+
+USE student_hub_db;
+
+CREATE TABLE IF NOT EXISTS practical13_students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    department VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

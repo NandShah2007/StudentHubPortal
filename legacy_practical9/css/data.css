@@ -1,0 +1,216 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F7F1E5;
+    color: #4B3621;
+    line-height: 1.5;
+}
+
+.topbar {
+    background: #A67C52;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 35px auto;
+    min-height: 65vh;
+}
+
+.page-heading {
+    margin-bottom: 24px;
+}
+
+.page-heading h1 {
+    font-size: clamp(25px, 4vw, 34px);
+    margin-bottom: 8px;
+}
+
+.page-heading p {
+    color: #80664D;
+}
+
+.toolbar {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    background: #FFFDF9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #4B36211A;
+}
+
+.control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.control input,
+.control select {
+    width: 100%;
+    min-width: 0;
+    padding: 11px;
+    border: 1px solid #C9B49B;
+    border-radius: 7px;
+    background: white;
+    color: #4B3621;
+    font-size: 14px;
+}
+
+.control input:focus,
+.control select:focus,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #DCC3A5;
+    outline-offset: 2px;
+}
+
+.status {
+    margin: 22px 0 10px;
+    font-weight: bold;
+}
+
+.results-count {
+    margin: 18px 0 12px;
+    color: #80664D;
+}
+
+.records-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.record-card {
+    background: #FFFDF9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #E5D8C7;
+    box-shadow: 0 3px 10px #4B36210D;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow-wrap: anywhere;
+}
+
+.record-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px #4B36211A;
+}
+
+.record-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.record-card p {
+    margin-top: 7px;
+}
+
+.record-card .record-category {
+    display: inline-block;
+    background: #EFE2D0;
+    color: #65472D;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 28px 0;
+}
+
+button {
+    background: #8B6B4A;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 18px;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background: #6E5035;
+}
+
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #A67C52;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .toolbar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .records-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .topbar {
+        padding: 16px 4%;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .toolbar,
+    .records-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pagination {
+        gap: 10px;
+    }
+
+    .pagination button {
+        padding: 10px 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}

@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"title":"Web Development Workshop","category":"Workshop","date":"2026-11-05","venue":"Computer Lab 1"},
+  {"id":2,"title":"Annual Sports Day","category":"Sports","date":"2026-11-08","venue":"College Ground"},
+  {"id":3,"title":"Coding Competition","category":"Competition","date":"2026-11-12","venue":"Auditorium"},
+  {"id":4,"title":"Career Guidance Seminar","category":"Seminar","date":"2026-11-15","venue":"Seminar Hall"},
+  {"id":5,"title":"Cultural Festival","category":"Cultural","date":"2026-11-18","venue":"Main Campus"},
+  {"id":6,"title":"AI and Machine Learning Talk","category":"Seminar","date":"2026-11-20","venue":"Room 204"},
+  {"id":7,"title":"Cybersecurity Workshop","category":"Workshop","date":"2026-11-22","venue":"Computer Lab 2"},
+  {"id":8,"title":"Photography Contest","category":"Competition","date":"2026-11-24","venue":"Art Room"},
+  {"id":9,"title":"Basketball Tournament","category":"Sports","date":"2026-11-26","venue":"Sports Complex"},
+  {"id":10,"title":"Music Night","category":"Cultural","date":"2026-11-28","venue":"Open Stage"},
+  {"id":11,"title":"Resume Building Session","category":"Workshop","date":"2026-12-01","venue":"Seminar Hall"},
+  {"id":12,"title":"Science Exhibition","category":"Exhibition","date":"2026-12-04","venue":"Exhibition Hall"},
+  {"id":13,"title":"Entrepreneurship Seminar","category":"Seminar","date":"2026-12-07","venue":"Auditorium"},
+  {"id":14,"title":"Hackathon","category":"Competition","date":"2026-12-10","venue":"Innovation Lab"},
+  {"id":15,"title":"Community Clean-Up Drive","category":"Social","date":"2026-12-12","venue":"College Entrance"}
+]

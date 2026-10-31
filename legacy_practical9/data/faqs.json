@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"question":"How do I register for courses?","answer":"Open the Registration page and follow the instructions.","category":"Courses"},
+  {"id":2,"question":"How can I check my attendance?","answer":"Open the Attendance section of your dashboard.","category":"Attendance"},
+  {"id":3,"question":"Where can I view my results?","answer":"Visit the Results page to view your academic results.","category":"Results"},
+  {"id":4,"question":"How do I reset my password?","answer":"Use the password reset option if your portal supports it, or contact the administrator.","category":"Account"},
+  {"id":5,"question":"Where are assignments listed?","answer":"Open the Assignments section to review assignment details.","category":"Assignments"},
+  {"id":6,"question":"How do I view my timetable?","answer":"Select Timetable from the dashboard navigation.","category":"Courses"},
+  {"id":7,"question":"How can I contact the college?","answer":"Visit the Contact page for available contact details.","category":"General"},
+  {"id":8,"question":"Where can I find announcements?","answer":"Open the Announcements section for college updates.","category":"General"},
+  {"id":9,"question":"Can I change my profile details?","answer":"Open your Profile page to review available profile options.","category":"Account"},
+  {"id":10,"question":"How do I find upcoming events?","answer":"Open the Data Explorer and select Events.","category":"Events"},
+  {"id":11,"question":"What if I forget my student ID?","answer":"Contact the college administration for assistance.","category":"Account"},
+  {"id":12,"question":"How can I see course information?","answer":"Open My Courses to see your enrolled courses.","category":"Courses"},
+  {"id":13,"question":"Who should I contact about attendance errors?","answer":"Contact your faculty member or the attendance office.","category":"Attendance"},
+  {"id":14,"question":"Where can I check my academic year?","answer":"Check your profile or contact the college office if it is missing.","category":"General"},
+  {"id":15,"question":"How do I report a technical issue?","answer":"Use the Contact page to reach the relevant support team.","category":"Technical Support"}
+]

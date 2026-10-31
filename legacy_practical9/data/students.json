@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"name":"Aarav Patel","course":"BCA","year":1,"status":"Active"},
+  {"id":2,"name":"Diya Shah","course":"BSc IT","year":2,"status":"Active"},
+  {"id":3,"name":"Rohan Mehta","course":"BTech","year":3,"status":"Active"},
+  {"id":4,"name":"Anaya Desai","course":"BBA","year":1,"status":"Active"},
+  {"id":5,"name":"Vivaan Joshi","course":"MCA","year":2,"status":"Inactive"},
+  {"id":6,"name":"Isha Trivedi","course":"BCA","year":3,"status":"Active"},
+  {"id":7,"name":"Arjun Shah","course":"BSc IT","year":1,"status":"Active"},
+  {"id":8,"name":"Myra Patel","course":"BTech","year":4,"status":"Inactive"},
+  {"id":9,"name":"Kabir Mehta","course":"BBA","year":2,"status":"Active"},
+  {"id":10,"name":"Sara Desai","course":"MCA","year":1,"status":"Active"},
+  {"id":11,"name":"Reyansh Joshi","course":"BCA","year":2,"status":"Active"},
+  {"id":12,"name":"Aadhya Trivedi","course":"BSc IT","year":3,"status":"Inactive"},
+  {"id":13,"name":"Krish Shah","course":"BTech","year":2,"status":"Active"},
+  {"id":14,"name":"Pari Mehta","course":"BBA","year":3,"status":"Active"},
+  {"id":15,"name":"Dev Patel","course":"MCA","year":3,"status":"Active"}
+]
