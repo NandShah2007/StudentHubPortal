@@ -2,9 +2,9 @@
 
 **Student name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  **Date tested:** \_\_\_\_\_\_\_\_\_\_\_\_  **Browser:** Chrome \_\_\_\_\_\_  **XAMPP:** 8.2.12
 
-> How to use this file: run each test yourself. Write \\\*\\\*Pass\\\*\\\* or \\\*\\\*Fail\\\*\\\* in the \\\*Result\\\* column only
+> How to use this file: run each test yourself. Write \\\\\\\*\\\\\\\*Pass\\\\\\\*\\\\\\\* or \\\\\\\*\\\\\\\*Fail\\\\\\\*\\\\\\\* in the \\\\\\\*Result\\\\\\\* column only
 > after you have really tested it, and add a short note if something fails.
-> Everything is left as \\\*\\\*Not tested\\\*\\\* on purpose, so the report only contains your real results.
+> Everything is left as \\\\\\\*\\\\\\\*Not tested\\\\\\\*\\\\\\\* on purpose, so the report only contains your real results.
 
 Demo logins: Admin `admin@studenthub.local` / `Admin@12345`, Student `student@studenthub.local` / `Student@12345`.
 Base URL: `http://localhost/StudentHubPortal/` (or `http://studenthub.local/`).
@@ -15,7 +15,7 @@ Base URL: `http://localhost/StudentHubPortal/` (or `http://studenthub.local/`).
 |-|-|-|-|-|-|
 |F01|Homepage loads|Open the base URL|Home page with menu: Home, About, Contact, Login, Register|Pass||
 |F02|About and Contact pages|Click About, then Contact|Both pages open in the same theme|Pass||
-|F03|Contact form|Submit valid form; then submit empty form|Success message; then error messages. Message appears in `data/contact\\\_submissions.csv`|Pass||
+|F03|Contact form|Submit valid form; then submit empty form|Success message; then error messages. Message appears in `data/contact\\\\\\\_submissions.csv`|Pass||
 |F04|Student registration|Register page: fill valid data|Redirect to login with "Account created"|Pass||
 |F05|Duplicate registration|Register again with the same email|Error: already registered|Pass||
 |F06|Weak password|Register with a 5-character password|Error: at least 8 characters|Pass||
@@ -26,12 +26,12 @@ Base URL: `http://localhost/StudentHubPortal/` (or `http://studenthub.local/`).
 |F11|Student dashboard|Check page|Name, email, department, counts, working links|Pass||
 |F12|Admin dashboard|Check page|Live counts match phpMyAdmin tables|Pass||
 |F13|Student list|Admin > Manage Students|Table shows students; search and filter work|Pass||
-|F14|Add student|Add a new student|Success message; row appears; audit log `ADD\\\_STUDENT`|Pass||
-|F15|Edit student|Edit a name|Success; audit log `EDIT\\\_STUDENT`|Pass||
-|F16|Deactivate student|Click Deactivate|Status Inactive; audit log `DEACTIVATE\\\_STUDENT`|Pass||
+|F14|Add student|Add a new student|Success message; row appears; audit log `ADD\\\\\\\_STUDENT`|Pass||
+|F15|Edit student|Edit a name|Success; audit log `EDIT\\\\\\\_STUDENT`|Pass||
+|F16|Deactivate student|Click Deactivate|Status Inactive; audit log `DEACTIVATE\\\\\\\_STUDENT`|Pass||
 |F17|Inactive login blocked|Try to login as the deactivated student|"This account is inactive"|Pass||
-|F18|Export CSV|Click Export CSV|`student\\\_records.csv` downloads|Pass||
-|F19|Add event|Admin > Manage Events > add event (with and without poster)|Event listed; audit log `ADD\\\_EVENT`|Pass||
+|F18|Export CSV|Click Export CSV|`student\\\\\\\_records.csv` downloads|Pass||
+|F19|Add event|Admin > Manage Events > add event (with and without poster)|Event listed; audit log `ADD\\\\\\\_EVENT`|Pass||
 |F20|Edit event|Change title/date, replace poster|Updated; old poster file removed|Pass||
 |F21|Delete event|Delete an event|Removed; its registrations removed|Pass||
 |F22|View events (student)|Student > View Events|Event cards shown; search works|Pass||
@@ -61,18 +61,18 @@ Open `practical13/` as Admin, press **F12 > Network > Fetch/XHR**.
 
 |ID|Test|Expected result|Result|Notes|
 |-|-|-|-|-|
-|S01|Dashboard without login|Open `/student\\\_dashboard.php` in a private window|Redirect to login|Pass|
-|S02|Student opens admin page|As Student open `/admin\\\_dashboard.php`|403 Forbidden page|Pass|
-|S03|Student opens other admin URLs|`/students.php`, `/events/index.php`, `/manage\\\_registrations.php`, `/practical14/audit\\\_logs.php`, `/practical13/index.php`|403 each time|Pass|
-|S04|Admin opens student page|As Admin open `/my\\\_registrations.php`|403|Pass|
+|S01|Dashboard without login|Open `/student\\\\\\\_dashboard.php` in a private window|Redirect to login|Pass|
+|S02|Student opens admin page|As Student open `/admin\\\\\\\_dashboard.php`|403 Forbidden page|Pass|
+|S03|Student opens other admin URLs|`/students.php`, `/events/index.php`, `/manage\\\\\\\_registrations.php`, `/practical14/audit\\\\\\\_logs.php`, `/practical13/index.php`|403 each time|Pass|
+|S04|Admin opens student page|As Admin open `/my\\\\\\\_registrations.php`|403|Pass|
 |S05|Session timeout|Set timeout to 20 s (see README), wait, click a link|Redirect to login "session expired"|Pass|
 |S06|SQL injection|Login email `' OR '1'='1` ; search box `' OR 1=1 --`|No login, no error leak, no extra rows|Pass|
 |S07|XSS|Register a name `<script>alert(1)</script>`; view it in the admin student list|Shown as plain text, no popup|Pass|
-|S08|CSRF|On a form, remove the hidden `csrf\\\_token` field with DevTools and submit|"Security check failed" (HTTP 419)|Pass|
+|S08|CSRF|On a form, remove the hidden `csrf\\\\\\\_token` field with DevTools and submit|"Security check failed" (HTTP 419)|Pass|
 |S09|File upload type|Upload a `.php` file renamed to `.jpg`, and a `.txt` file|Rejected|Not tested|
 |S10|File upload size|Upload an image bigger than 2 MB|Rejected|Not tested|
 |S11|Password hashing|phpMyAdmin > students > password\_hash|Starts with `$2y$`, no plain text|Not tested|
-|S12|Contact data protected|Open `/data/contact\\\_submissions.csv` in browser|403 Forbidden|Not tested|
+|S12|Contact data protected|Open `/data/contact\\\\\\\_submissions.csv` in browser|403 Forbidden|Not tested|
 |S13|Audit logging|Admin > Audit Logs after tests F14-F16, F19-F21|One row per action with user, IP and time|Not tested|
 |S14|Brute force|6 wrong passwords in a row|"Too many failed attempts"|Not tested|
 
@@ -104,16 +104,13 @@ Open `practical13/` as Admin, press **F12 > Network > Fetch/XHR**.
 
 |ID|Check|Result|Notes|
 |-|-|-|-|
-|D01|`studenthub.sql` imports into a NEW empty database (e.g. `test\\\_import`) without errors|Pass||
+|D01|`studenthub.sql` imports into a NEW empty database (e.g. `test\\\\\\\_import`) without errors|Pass||
 |D02|After import there are 5 tables with demo data|Pass||
 |D03|Registrations reference valid students and events (foreign keys)|Pass||
-|D04|Only one database is used (`student\\\_hub\\\_db`); `event\\\_db` not needed|Pass||
+|D04|Only one database is used (`student\\\\\\\_hub\\\\\\\_db`); `event\\\\\\\_db` not needed|Pass||
 
 ## 7\. Summary
 
-Total tests: \_\_61\_\_  Passed: \_\_61\_\_  Failed: \_\_0\_\_
-
-Problems found and fixed: \_\_\_\_\_\_\_\_\_\_\_\_\_\_NA\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
+All test that are Performed are pass
 Signature: \_\_\_\_\_\_\_\_Nand Shah\_\_\_\_\_\_\_\_\_\_\_\_
 
